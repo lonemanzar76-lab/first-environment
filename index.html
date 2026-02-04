@@ -1,21 +1,312 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>.math buddy - CBSE Class 10 Learning App</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..66552e7b0c59013db741184741a0b46100c8df1a
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,301 @@
++<!doctype html>
++<html lang="en">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>.math buddy - CBSE Class 10 Learning App</title>
++    <link rel="stylesheet" href="styles.css" />
++    <link rel="preconnect" href="https://fonts.googleapis.com" />
++    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++    <link
++      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
++      rel="stylesheet"
++    />
++  </head>
++  <body>
++    <header class="hero">
++      <nav class="nav">
++        <div class="logo">.math buddy</div>
++        <div class="nav-links">
++          <a href="#chapters">Chapters</a>
++          <a href="#formulas">Formulas</a>
++          <a href="#practice">Practice</a>
++          <a href="#doubts">Doubt Help</a>
++        </div>
++        <button class="cta">Start Learning</button>
++      </nav>
++      <div class="hero-content">
++        <div class="hero-text">
++          <p class="tag">CBSE Class 10 Maths - Made Simple</p>
++          <h1>Learn every chapter with clear steps, formulas, and guided practice.</h1>
++          <p>
++            Built for students who feel weak in maths. Get chapter-wise explanations,
++            formulas, solved examples, and a friendly space to ask doubts.
++          </p>
++          <div class="hero-actions">
++            <button class="cta">Explore Chapters</button>
++            <button class="ghost">See how it works</button>
++          </div>
++          <div class="hero-stats">
++            <div>
++              <h3>15</h3>
++              <span>CBSE Chapters</span>
++            </div>
++            <div>
++              <h3>120+</h3>
++              <span>Solved Examples</span>
++            </div>
++            <div>
++              <h3>24/7</h3>
++              <span>Doubt Support</span>
++            </div>
++          </div>
++        </div>
++        <div class="hero-card">
++          <h2>Student Login</h2>
++          <p class="small">Enter your details to personalize your learning journey.</p>
++          <form class="login-form">
++            <label>
++              Full Name
++              <input type="text" placeholder="e.g. Aman Kumar" />
++            </label>
++            <label>
++              Class
++              <input type="text" placeholder="Class 10" />
++            </label>
++            <label>
++              Phone Number
++              <input type="tel" placeholder="e.g. 98765 43210" />
++            </label>
++            <button type="button" class="cta">Login & Start</button>
++          </form>
++          <div class="divider"></div>
++          <h3>Today's Focus</h3>
++          <p class="topic">Quadratic Equations</p>
++          <ul>
++            <li>Understand standard form</li>
++            <li>Use factorisation and formula</li>
++            <li>Solve real-life word problems</li>
++          </ul>
++          <button class="cta">Start Lesson</button>
++        </div>
++      </div>
++    </header>
++
++    <main>
++      <section id="chapters" class="section">
++        <div class="section-title">
++          <h2>All CBSE Class 10 Chapters (No Book Needed)</h2>
++          <p>Each chapter has easy notes, step-by-step solutions, and practice questions.</p>
++        </div>
++        <div class="grid">
++          <article class="card">
++            <h3>1. Real Numbers</h3>
++            <p>Euclid's division, HCF, LCM, and irrational numbers explained simply.</p>
++            <span class="pill">Basics + Practice</span>
++          </article>
++          <article class="card">
++            <h3>2. Polynomials</h3>
++            <p>Zeros of polynomials, factor theorem, and division algorithm with examples.</p>
++            <span class="pill">Concepts + Tricks</span>
++          </article>
++          <article class="card">
++            <h3>3. Pair of Linear Equations</h3>
++            <p>Graphical and algebraic solutions with real-life problems.</p>
++            <span class="pill">Elimination + Substitution</span>
++          </article>
++          <article class="card">
++            <h3>4. Quadratic Equations</h3>
++            <p>Factorisation, formula method, and discriminant tricks.</p>
++            <span class="pill">Formula + Practice</span>
++          </article>
++          <article class="card">
++            <h3>5. Arithmetic Progressions</h3>
++            <p>Find nth term, sum of n terms, and pattern recognition.</p>
++            <span class="pill">Sequences</span>
++          </article>
++          <article class="card">
++            <h3>6. Triangles</h3>
++            <p>Similarity, Pythagoras, and proofs simplified.</p>
++            <span class="pill">Proofs Made Easy</span>
++          </article>
++          <article class="card">
++            <h3>7. Coordinate Geometry</h3>
++            <p>Distance, section formula, and area of triangles.</p>
++            <span class="pill">Graph Skills</span>
++          </article>
++          <article class="card">
++            <h3>8. Introduction to Trigonometry</h3>
++            <p>Trig ratios, values of 30°, 45°, 60° and identities.</p>
++            <span class="pill">Ratios + Identities</span>
++          </article>
++          <article class="card">
++            <h3>9. Applications of Trigonometry</h3>
++            <p>Heights & distances with clear diagrams.</p>
++            <span class="pill">Word Problems</span>
++          </article>
++          <article class="card">
++            <h3>10. Circles</h3>
++            <p>Tangents, chords, and proofs in simple steps.</p>
++            <span class="pill">Theorems</span>
++          </article>
++          <article class="card">
++            <h3>11. Areas Related to Circles</h3>
++            <p>Sector, segment, and combined figures practice.</p>
++            <span class="pill">Area Tricks</span>
++          </article>
++          <article class="card">
++            <h3>12. Surface Areas & Volumes</h3>
++            <p>Formulas and practice for 3D shapes.</p>
++            <span class="pill">Mensuration</span>
++          </article>
++          <article class="card">
++            <h3>13. Statistics</h3>
++            <p>Mean, median, mode with shortcut methods.</p>
++            <span class="pill">Data Handling</span>
++          </article>
++          <article class="card">
++            <h3>14. Probability</h3>
++            <p>Easy steps for basic probability questions.</p>
++            <span class="pill">Concept Focus</span>
++          </article>
++          <article class="card">
++            <h3>15. Sample Papers + Revision</h3>
++            <p>Important questions, mixed practice, and quick revision notes.</p>
++            <span class="pill">Exam Ready</span>
++          </article>
++        </div>
++      </section>
++
++      <section id="formulas" class="section alt">
++        <div class="section-title">
++          <h2>Formula Sheet with “How to Use It” Notes</h2>
++          <p>Tap any formula to see a quick usage tip and a mini example.</p>
++        </div>
++        <div class="formula-grid">
++          <button class="formula" data-tip="Use when equation is ax²+bx+c=0.">
++            Quadratic Formula
++            <span>x = (-b ± √(b² - 4ac)) / 2a</span>
++          </button>
++          <button class="formula" data-tip="Sum of first n terms in AP.">
++            AP Sum
++            <span>S<sub>n</sub> = n/2 [2a + (n-1)d]</span>
++          </button>
++          <button class="formula" data-tip="Distance between two points (x1,y1),(x2,y2).">
++            Distance Formula
++            <span>√((x₂-x₁)² + (y₂-y₁)²)</span>
++          </button>
++          <button class="formula" data-tip="Trigonometry identity used to simplify.">
++            Pythagoras Identity
++            <span>sin²θ + cos²θ = 1</span>
++          </button>
++          <button class="formula" data-tip="Area of circle and sectors.">
++            Circle Area
++            <span>πr²</span>
++          </button>
++          <button class="formula" data-tip="Standard deviation for grouped data. (Optional)">
++            Statistics
++            <span>σ = √(Σf(x- x̄)² / Σf)</span>
++          </button>
++        </div>
++        <p class="hint" id="formula-tip">Click a formula to see tips.</p>
++      </section>
++
++      <section id="practice" class="section">
++        <div class="section-title">
++          <h2>Step-by-Step Practice (Solved in Easy Way)</h2>
++          <p>Every question is broken into small steps so you never feel stuck.</p>
++        </div>
++        <div class="practice-grid">
++          <article class="practice-card">
++            <h3>Example: Quadratic Equation</h3>
++            <ol>
++              <li>Write the equation in standard form: ax² + bx + c = 0.</li>
++              <li>Identify a, b, c. Here a = 1, b = -5, c = 6.</li>
++              <li>Use factorisation: (x-2)(x-3)=0.</li>
++              <li>Answer: x = 2 and x = 3.</li>
++            </ol>
++          </article>
++          <article class="practice-card">
++            <h3>Example: Trigonometry</h3>
++            <ol>
++              <li>Draw the right triangle and mark sides.</li>
++              <li>Choose the ratio: sinθ = opposite/hypotenuse.</li>
++              <li>Substitute values and simplify.</li>
++              <li>Check if the answer is logical.</li>
++            </ol>
++          </article>
++          <article class="practice-card">
++            <h3>Example: Statistics (Mean)</h3>
++            <ol>
++              <li>Find class marks (midpoints).</li>
++              <li>Multiply each class mark by frequency.</li>
++              <li>Sum all fx values.</li>
++              <li>Divide by total frequency.</li>
++            </ol>
++          </article>
++        </div>
++      </section>
++
++      <section id="doubts" class="section alt">
++        <div class="section-title">
++          <h2>Doubt Corner</h2>
++          <p>Ask a question, share a screenshot, or request a revision call.</p>
++        </div>
++        <div class="doubt-grid">
++          <form class="doubt-form">
++            <label>
++              Your Name
++              <input type="text" placeholder="e.g. Aman" />
++            </label>
++            <label>
++              Chapter
++              <select>
++                <option>Quadratic Equations</option>
++                <option>Trigonometry</option>
++                <option>Coordinate Geometry</option>
++                <option>Statistics</option>
++              </select>
++            </label>
++            <label>
++              Your Doubt
++              <textarea placeholder="Explain your question here..."></textarea>
++            </label>
++            <button type="button" class="cta">Submit Doubt</button>
++            <p class="small">A mentor replies within 24 hours.</p>
++          </form>
++          <div class="doubt-info">
++            <h3>How we help</h3>
++            <ul>
++              <li>Instant hints and formula reminders.</li>
++              <li>Step-by-step solution from a teacher.</li>
++              <li>Revision notes and practice sheets.</li>
++              <li>Voice notes if you need extra clarity.</li>
++            </ul>
++            <div class="support-card">
++              <h4>Need urgent help?</h4>
++              <p>Join the daily live doubt room at 7 PM.</p>
++              <button class="ghost">Join Live Room</button>
++            </div>
++          </div>
++        </div>
++      </section>
++    </main>
++
++    <footer class="footer">
++      <div>
++        <h3>.math buddy</h3>
++        <p>Confidence for every Class 10 student.</p>
++      </div>
++      <div class="footer-links">
++        <a href="#chapters">Chapters</a>
++        <a href="#formulas">Formulas</a>
++        <a href="#practice">Practice</a>
++        <a href="#doubts">Doubt Help</a>
++      </div>
++      <p class="small">Made for CBSE Class 10 • Learn daily, grow steadily.</p>
++    </footer>
++
++    <script src="script.js"></script>
++  </body>
++</html>
+ 
+EOF
+)
 
-    <!-- (POORA HTML BODY JO TUMNE BHEJA HAI, SAME TO SAME) -->
-
-    <script src="script.js"></script>
-  </body>
-</html>
